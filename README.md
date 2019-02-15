@@ -5,3 +5,5 @@ This code allows communication between the Arduino and Raspberry Pi. In this par
 Upload RaspberryPi_Communication_LidarLiteMotorControl.ino to Arduino
 
 Add serial_test.py and playmusic.py to the same project folder on the Raspberry Pi
+
+The music plays in a separate thread so that it can be killed when receiving a signal from the arduino that the object or person has been removed. In a serial program the music would continue to play until the end of the sound file.
